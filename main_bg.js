@@ -11,7 +11,8 @@ function draw_main_svg(svg){
 var CLOUD_COLOR1 = "#FFF";
 var CLOUD_COLOR2 = "#DDD";
 var GROUND_COLOR1 = "#8fc354";
-var GROUND_COLOR2 = "#0ca535";
+var GROUND_COLOR2 = "#0cc535";
+var GROUND_COLOR3 = "#0ca835";
 
 //Sky
   var sky = svg.rect(0,0,width,height).attr({fill: "lightskyblue", stroke: "none"});
@@ -29,6 +30,13 @@ var GROUND_COLOR2 = "#0ca535";
       "L "+ 3*width/5 + " " + height/2 +
       "L "+ width + " " + ( height*2/3) + 
       "Z ").attr({fill: GROUND_COLOR1,stroke: GROUND_COLOR1});
+  
+  var top3 = svg.path(
+      "M "+ width/6 +" "+ height*2/3 +
+      "L "+ 2*width/5 + " " + height/2 +
+      "L "+ width + " " + ( height*2/3) + 
+      "Z ").attr({fill: GROUND_COLOR3,stroke: GROUND_COLOR3});
+
 // Cloud animations
   var w = width/15;
   var h = height/20;
