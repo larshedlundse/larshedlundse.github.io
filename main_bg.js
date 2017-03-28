@@ -10,8 +10,8 @@ function draw_main_svg(svg){
 //Colors
 var CLOUD_COLOR1 = "#FFF";
 var CLOUD_COLOR2 = "#DDD";
-var GROUND_COLOR1 = "#FFF";
-var GROUND_COLOR2 = "#DEE";
+var GROUND_COLOR1 = "#8fc354";
+var GROUND_COLOR2 = "#0ca535";
 
 //Sky
   var sky = svg.rect(0,0,width,height).attr({fill: "lightskyblue", stroke: "none"});

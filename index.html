@@ -1,4 +1,4 @@
-ï»¿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 <script src="jquery.js">
@@ -6,8 +6,6 @@
 <script src="raphael.js"> 
 </script>
 <script src="house.js"> 
-</script>
-<script src="grej.js"> 
 </script>
 <script src="main_bg.js"> 
 </script>
@@ -17,7 +15,7 @@
 
 <script>
 
-//xmlDoc=loadXMLDoc("http://www.yr.no/place/Sweden/Ã–stergÃ¶tland/LinkÃ¶ping/forecast.xml");
+//xmlDoc=loadXMLDoc("http://www.yr.no/place/Sweden/Östergötland/Linköping/forecast.xml");
 //Variables
  
 var width = $(this).width();
@@ -30,13 +28,11 @@ $(document).ready(function(){
 //Initializing
   var main_svg = Raphael(0,0,width,height);
   var motion_svg = Raphael(0,0,width,height);
-  var grej_svg = Raphael(0,0,width,height);  
   var links_svg = Raphael(0,0,width,height);
   
 
   draw_main_svg(main_svg);
   draw_motion_svg(motion_svg);
-  //draw_grej_svg(grej_svg, width/2, height/2);
   draw_links_svg(links_svg);
 
 // If window size change
@@ -46,17 +42,14 @@ $(document).ready(function(){
 
     main_svg.clear(); 
     motion_svg.clear();
-    //grej_svg.clear(); 
     links_svg.clear();
 
     main_svg = Raphael(0,0,width,height);
     motion_svg = Raphael(0,0,width,height);
-    //grej_svg = Raphael(0,0,width,height);
     links_svg = Raphael(0,0,width,height);
 
     draw_main_svg(main_svg);
     draw_motion_svg(motion_svg);
-    //draw_grej_svg(grej_svg, width/2, height/2);
     draw_links_svg(links_svg);
   });
 
